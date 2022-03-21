@@ -1,0 +1,646 @@
+==16972== Memcheck, a memory error detector
+==16972== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==16972== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==16972== Command: ./bank input-1.txt
+==16972== 
+num_accounts = 10
+line_buf = 10
+
+BEFORE
+account 0 has a ballance of 4037287.540000
+account 1 has a ballance of 563034.370000
+account 2 has a ballance of 4230253.140000
+account 3 has a ballance of 4658981.140000
+account 4 has a ballance of 1046102.760000
+account 5 has a ballance of 3034486.400000
+account 6 has a ballance of 314013.610000
+account 7 has a ballance of 2243715.940000
+account 8 has a ballance of 3292644.010000
+account 9 has a ballance of 1540366.190000
+
+num_commands_per_thread is 12000
+Got to barrier
+Got to barrier
+Got to barrier
+Got to barrier
+Got to barrier
+Got to barrier
+Got to barrier
+Got to barrier
+Got to barrier
+Got to barrier
+Got past the barrier
+Pausing the bank thread
+Got past the barrier
+Got past the barrier
+Hit 5000. how_many_accounts_done == 1 and num_threads_still_running == 10
+thread waiting
+	 num_of_requests == 5000
+Got past the barrier
+Hit 5000. how_many_accounts_done == 2 and num_threads_still_running == 10
+thread waiting
+	 num_of_requests == 5000
+Got past the barrier
+Hit 5000. how_many_accounts_done == 3 and num_threads_still_running == 10
+thread waiting
+	 num_of_requests == 5000
+Got past the barrier
+Hit 5000. how_many_accounts_done == 4 and num_threads_still_running == 10
+thread waiting
+	 num_of_requests == 5000
+Got past the barrier
+Hit 5000. how_many_accounts_done == 5 and num_threads_still_running == 10
+thread waiting
+	 num_of_requests == 5000
+Got past the barrier
+Hit 5000. how_many_accounts_done == 6 and num_threads_still_running == 10
+thread waiting
+	 num_of_requests == 5000
+Hit 5000. how_many_accounts_done == 7 and num_threads_still_running == 10
+thread waiting
+	 num_of_requests == 5000
+Got past the barrier
+Hit 5000. how_many_accounts_done == 8 and num_threads_still_running == 10
+thread waiting
+	 num_of_requests == 5000
+Got past the barrier
+Hit 5000. how_many_accounts_done == 9 and num_threads_still_running == 10
+thread waiting
+	 num_of_requests == 5000
+Hit 5000. how_many_accounts_done == 10 and num_threads_still_running == 10
+inside the condition: and num_threads_still_running = 10
+signal bank and cond waiting the last transaction thread
+
+
+There are 120000 many commands and how_many_loops = 24
+Bank thread is being called
+updating account #0 tractor
+updating account #1 tractor
+updating account #2 tractor
+updating account #3 tractor
+updating account #4 tractor
+updating account #5 tractor
+updating account #6 tractor
+updating account #7 tractor
+updating account #8 tractor
+updating account #9 tractor
+bank update time is 1Hit 5000. how_many_accounts_done == 1 and num_threads_still_running == 10
+thread waiting
+	 num_of_requests == 5000
+Hit 5000. how_many_accounts_done == 2 and num_threads_still_running == 10
+thread waiting
+	 num_of_requests == 5001
+Hit 5000. how_many_accounts_done == 3 and num_threads_still_running == 10
+thread waiting
+	 num_of_requests == 5002
+Hit 5000. how_many_accounts_done == 4 and num_threads_still_running == 10
+thread waiting
+	 num_of_requests == 5003
+Hit 5000. how_many_accounts_done == 5 and num_threads_still_running == 10
+thread waiting
+	 num_of_requests == 5004
+Hit 5000. how_many_accounts_done == 6 and num_threads_still_running == 10
+thread waiting
+	 num_of_requests == 5005
+Hit 5000. how_many_accounts_done == 7 and num_threads_still_running == 10
+thread waiting
+	 num_of_requests == 5006
+Hit 5000. how_many_accounts_done == 8 and num_threads_still_running == 10
+thread waiting
+	 num_of_requests == 5006
+Hit 5000. how_many_accounts_done == 9 and num_threads_still_running == 10
+thread waiting
+	 num_of_requests == 5007
+Hit 5000. how_many_accounts_done == 10 and num_threads_still_running == 10
+inside the condition: and num_threads_still_running = 10
+signal bank and cond waiting the last transaction thread
+Bank thread is being called
+updating account #0 tractor
+updating account #1 tractor
+updating account #2 tractor
+updating account #3 tractor
+updating account #4 tractor
+updating account #5 tractor
+updating account #6 tractor
+updating account #7 tractor
+updating account #8 tractor
+updating account #9 tractor
+bank update time is 2Num of requests is 3957
+how_many_accounts_done is 0
+num_threads_still_running is 9
+
+Hit 5000. how_many_accounts_done == 1 and num_threads_still_running == 9
+thread waiting
+	 num_of_requests == 5000
+Hit 5000. how_many_accounts_done == 2 and num_threads_still_running == 9
+thread waiting
+	 num_of_requests == 5001
+Hit 5000. how_many_accounts_done == 3 and num_threads_still_running == 9
+thread waiting
+	 num_of_requests == 5002
+Hit 5000. how_many_accounts_done == 4 and num_threads_still_running == 9
+thread waiting
+	 num_of_requests == 5002
+Hit 5000. how_many_accounts_done == 5 and num_threads_still_running == 9
+thread waiting
+	 num_of_requests == 5002
+Hit 5000. how_many_accounts_done == 6 and num_threads_still_running == 9
+thread waiting
+	 num_of_requests == 5002
+Hit 5000. how_many_accounts_done == 7 and num_threads_still_running == 9
+thread waiting
+	 num_of_requests == 5003
+Hit 5000. how_many_accounts_done == 8 and num_threads_still_running == 9
+thread waiting
+	 num_of_requests == 5004
+Hit 5000. how_many_accounts_done == 9 and num_threads_still_running == 9
+inside the condition: and num_threads_still_running = 9
+signal bank and cond waiting the last transaction thread
+Bank thread is being called
+updating account #0 tractor
+updating account #1 tractor
+updating account #2 tractor
+updating account #3 tractor
+updating account #4 tractor
+updating account #5 tractor
+updating account #6 tractor
+updating account #7 tractor
+updating account #8 tractor
+updating account #9 tractor
+bank update time is 3Hit 5000. how_many_accounts_done == 1 and num_threads_still_running == 9
+thread waiting
+	 num_of_requests == 5000
+Hit 5000. how_many_accounts_done == 2 and num_threads_still_running == 9
+thread waiting
+	 num_of_requests == 5001
+Hit 5000. how_many_accounts_done == 3 and num_threads_still_running == 9
+thread waiting
+	 num_of_requests == 5001
+Hit 5000. how_many_accounts_done == 4 and num_threads_still_running == 9
+thread waiting
+	 num_of_requests == 5001
+Hit 5000. how_many_accounts_done == 5 and num_threads_still_running == 9
+thread waiting
+	 num_of_requests == 5002
+Hit 5000. how_many_accounts_done == 6 and num_threads_still_running == 9
+thread waiting
+	 num_of_requests == 5003
+Hit 5000. how_many_accounts_done == 7 and num_threads_still_running == 9
+thread waiting
+	 num_of_requests == 5003
+Hit 5000. how_many_accounts_done == 8 and num_threads_still_running == 9
+thread waiting
+	 num_of_requests == 5003
+Hit 5000. how_many_accounts_done == 9 and num_threads_still_running == 9
+inside the condition: and num_threads_still_running = 9
+signal bank and cond waiting the last transaction thread
+Bank thread is being called
+updating account #0 tractor
+updating account #1 tractor
+updating account #2 tractor
+updating account #3 tractor
+updating account #4 tractor
+updating account #5 tractor
+updating account #6 tractor
+updating account #7 tractor
+updating account #8 tractor
+updating account #9 tractor
+bank update time is 4Num of requests is 3314
+how_many_accounts_done is 0
+num_threads_still_running is 8
+
+Hit 5000. how_many_accounts_done == 1 and num_threads_still_running == 8
+thread waiting
+	 num_of_requests == 5000
+Hit 5000. how_many_accounts_done == 2 and num_threads_still_running == 8
+thread waiting
+	 num_of_requests == 5000
+Hit 5000. how_many_accounts_done == 3 and num_threads_still_running == 8
+thread waiting
+	 num_of_requests == 5000
+Hit 5000. how_many_accounts_done == 4 and num_threads_still_running == 8
+thread waiting
+	 num_of_requests == 5001
+Hit 5000. how_many_accounts_done == 5 and num_threads_still_running == 8
+thread waiting
+	 num_of_requests == 5001
+Hit 5000. how_many_accounts_done == 6 and num_threads_still_running == 8
+thread waiting
+	 num_of_requests == 5002
+Hit 5000. how_many_accounts_done == 7 and num_threads_still_running == 8
+thread waiting
+	 num_of_requests == 5003
+Hit 5000. how_many_accounts_done == 8 and num_threads_still_running == 8
+inside the condition: and num_threads_still_running = 8
+signal bank and cond waiting the last transaction thread
+Bank thread is being called
+updating account #0 tractor
+updating account #1 tractor
+updating account #2 tractor
+updating account #3 tractor
+updating account #4 tractor
+updating account #5 tractor
+updating account #6 tractor
+updating account #7 tractor
+updating account #8 tractor
+updating account #9 tractor
+bank update time is 5Hit 5000. how_many_accounts_done == 1 and num_threads_still_running == 8
+thread waiting
+	 num_of_requests == 5000
+Hit 5000. how_many_accounts_done == 2 and num_threads_still_running == 8
+thread waiting
+	 num_of_requests == 5001
+Hit 5000. how_many_accounts_done == 3 and num_threads_still_running == 8
+thread waiting
+	 num_of_requests == 5002
+Hit 5000. how_many_accounts_done == 4 and num_threads_still_running == 8
+thread waiting
+	 num_of_requests == 5003
+Hit 5000. how_many_accounts_done == 5 and num_threads_still_running == 8
+thread waiting
+	 num_of_requests == 5004
+Hit 5000. how_many_accounts_done == 6 and num_threads_still_running == 8
+thread waiting
+	 num_of_requests == 5005
+Hit 5000. how_many_accounts_done == 7 and num_threads_still_running == 8
+thread waiting
+	 num_of_requests == 5006
+Hit 5000. how_many_accounts_done == 8 and num_threads_still_running == 8
+inside the condition: and num_threads_still_running = 8
+signal bank and cond waiting the last transaction thread
+Bank thread is being called
+updating account #0 tractor
+updating account #1 tractor
+updating account #2 tractor
+updating account #3 tractor
+updating account #4 tractor
+updating account #5 tractor
+updating account #6 tractor
+updating account #7 tractor
+updating account #8 tractor
+updating account #9 tractor
+bank update time is 6Num of requests is 4477
+how_many_accounts_done is 0
+num_threads_still_running is 7
+
+Hit 5000. how_many_accounts_done == 1 and num_threads_still_running == 7
+thread waiting
+	 num_of_requests == 5000
+Hit 5000. how_many_accounts_done == 2 and num_threads_still_running == 7
+thread waiting
+	 num_of_requests == 5001
+Hit 5000. how_many_accounts_done == 3 and num_threads_still_running == 7
+thread waiting
+	 num_of_requests == 5002
+Hit 5000. how_many_accounts_done == 4 and num_threads_still_running == 7
+thread waiting
+	 num_of_requests == 5003
+Hit 5000. how_many_accounts_done == 5 and num_threads_still_running == 7
+thread waiting
+	 num_of_requests == 5004
+Hit 5000. how_many_accounts_done == 6 and num_threads_still_running == 7
+thread waiting
+	 num_of_requests == 5004
+Hit 5000. how_many_accounts_done == 7 and num_threads_still_running == 7
+inside the condition: and num_threads_still_running = 7
+signal bank and cond waiting the last transaction thread
+Bank thread is being called
+updating account #0 tractor
+updating account #1 tractor
+updating account #2 tractor
+updating account #3 tractor
+updating account #4 tractor
+updating account #5 tractor
+updating account #6 tractor
+updating account #7 tractor
+updating account #8 tractor
+updating account #9 tractor
+bank update time is 7Hit 5000. how_many_accounts_done == 1 and num_threads_still_running == 7
+thread waiting
+	 num_of_requests == 5000
+Hit 5000. how_many_accounts_done == 2 and num_threads_still_running == 7
+thread waiting
+	 num_of_requests == 5001
+Hit 5000. how_many_accounts_done == 3 and num_threads_still_running == 7
+thread waiting
+	 num_of_requests == 5002
+Hit 5000. how_many_accounts_done == 4 and num_threads_still_running == 7
+thread waiting
+	 num_of_requests == 5003
+Hit 5000. how_many_accounts_done == 5 and num_threads_still_running == 7
+thread waiting
+	 num_of_requests == 5004
+Hit 5000. how_many_accounts_done == 6 and num_threads_still_running == 7
+thread waiting
+	 num_of_requests == 5004
+Hit 5000. how_many_accounts_done == 7 and num_threads_still_running == 7
+inside the condition: and num_threads_still_running = 7
+signal bank and cond waiting the last transaction thread
+Bank thread is being called
+updating account #0 tractor
+updating account #1 tractor
+updating account #2 tractor
+updating account #3 tractor
+updating account #4 tractor
+updating account #5 tractor
+updating account #6 tractor
+updating account #7 tractor
+updating account #8 tractor
+updating account #9 tractor
+bank update time is 8Hit 5000. how_many_accounts_done == 1 and num_threads_still_running == 7
+thread waiting
+	 num_of_requests == 5000
+Hit 5000. how_many_accounts_done == 2 and num_threads_still_running == 7
+thread waiting
+	 num_of_requests == 5001
+Hit 5000. how_many_accounts_done == 3 and num_threads_still_running == 7
+thread waiting
+	 num_of_requests == 5002
+Hit 5000. how_many_accounts_done == 4 and num_threads_still_running == 7
+thread waiting
+	 num_of_requests == 5003
+Hit 5000. how_many_accounts_done == 5 and num_threads_still_running == 7
+thread waiting
+	 num_of_requests == 5004
+Hit 5000. how_many_accounts_done == 6 and num_threads_still_running == 7
+thread waiting
+	 num_of_requests == 5005
+Hit 5000. how_many_accounts_done == 7 and num_threads_still_running == 7
+inside the condition: and num_threads_still_running = 7
+signal bank and cond waiting the last transaction thread
+Bank thread is being called
+updating account #0 tractor
+updating account #1 tractor
+updating account #2 tractor
+updating account #3 tractor
+updating account #4 tractor
+updating account #5 tractor
+updating account #6 tractor
+updating account #7 tractor
+updating account #8 tractor
+updating account #9 tractor
+bank update time is 9Hit 5000. how_many_accounts_done == 1 and num_threads_still_running == 7
+thread waiting
+	 num_of_requests == 5000
+Hit 5000. how_many_accounts_done == 2 and num_threads_still_running == 7
+thread waiting
+	 num_of_requests == 5001
+Hit 5000. how_many_accounts_done == 3 and num_threads_still_running == 7
+thread waiting
+	 num_of_requests == 5002
+Hit 5000. how_many_accounts_done == 4 and num_threads_still_running == 7
+thread waiting
+	 num_of_requests == 5003
+Hit 5000. how_many_accounts_done == 5 and num_threads_still_running == 7
+thread waiting
+	 num_of_requests == 5003
+Hit 5000. how_many_accounts_done == 6 and num_threads_still_running == 7
+thread waiting
+	 num_of_requests == 5004
+Hit 5000. how_many_accounts_done == 7 and num_threads_still_running == 7
+inside the condition: and num_threads_still_running = 7
+signal bank and cond waiting the last transaction thread
+Bank thread is being called
+updating account #0 tractor
+updating account #1 tractor
+updating account #2 tractor
+updating account #3 tractor
+updating account #4 tractor
+updating account #5 tractor
+updating account #6 tractor
+updating account #7 tractor
+updating account #8 tractor
+updating account #9 tractor
+bank update time is 10Num of requests is 3547
+how_many_accounts_done is 0
+num_threads_still_running is 6
+
+Hit 5000. how_many_accounts_done == 1 and num_threads_still_running == 6
+thread waiting
+	 num_of_requests == 5000
+Hit 5000. how_many_accounts_done == 2 and num_threads_still_running == 6
+thread waiting
+	 num_of_requests == 5000
+Hit 5000. how_many_accounts_done == 3 and num_threads_still_running == 6
+thread waiting
+	 num_of_requests == 5001
+Hit 5000. how_many_accounts_done == 4 and num_threads_still_running == 6
+thread waiting
+	 num_of_requests == 5001
+Hit 5000. how_many_accounts_done == 5 and num_threads_still_running == 6
+thread waiting
+	 num_of_requests == 5002
+Hit 5000. how_many_accounts_done == 6 and num_threads_still_running == 6
+inside the condition: and num_threads_still_running = 6
+signal bank and cond waiting the last transaction thread
+Bank thread is being called
+updating account #0 tractor
+updating account #1 tractor
+updating account #2 tractor
+updating account #3 tractor
+updating account #4 tractor
+updating account #5 tractor
+updating account #6 tractor
+updating account #7 tractor
+updating account #8 tractor
+updating account #9 tractor
+bank update time is 11Hit 5000. how_many_accounts_done == 1 and num_threads_still_running == 6
+thread waiting
+	 num_of_requests == 5000
+Hit 5000. how_many_accounts_done == 2 and num_threads_still_running == 6
+thread waiting
+	 num_of_requests == 5001
+Hit 5000. how_many_accounts_done == 3 and num_threads_still_running == 6
+thread waiting
+	 num_of_requests == 5001
+Hit 5000. how_many_accounts_done == 4 and num_threads_still_running == 6
+thread waiting
+	 num_of_requests == 5002
+Hit 5000. how_many_accounts_done == 5 and num_threads_still_running == 6
+thread waiting
+	 num_of_requests == 5002
+Hit 5000. how_many_accounts_done == 6 and num_threads_still_running == 6
+inside the condition: and num_threads_still_running = 6
+signal bank and cond waiting the last transaction thread
+Bank thread is being called
+updating account #0 tractor
+updating account #1 tractor
+updating account #2 tractor
+updating account #3 tractor
+updating account #4 tractor
+updating account #5 tractor
+updating account #6 tractor
+updating account #7 tractor
+updating account #8 tractor
+updating account #9 tractor
+bank update time is 12Num of requests is 4803
+how_many_accounts_done is 0
+num_threads_still_running is 5
+
+Hit 5000. how_many_accounts_done == 1 and num_threads_still_running == 5
+thread waiting
+	 num_of_requests == 5000
+Hit 5000. how_many_accounts_done == 2 and num_threads_still_running == 5
+thread waiting
+	 num_of_requests == 5001
+Hit 5000. how_many_accounts_done == 3 and num_threads_still_running == 5
+thread waiting
+	 num_of_requests == 5001
+Hit 5000. how_many_accounts_done == 4 and num_threads_still_running == 5
+thread waiting
+	 num_of_requests == 5001
+Hit 5000. how_many_accounts_done == 5 and num_threads_still_running == 5
+inside the condition: and num_threads_still_running = 5
+signal bank and cond waiting the last transaction thread
+Bank thread is being called
+updating account #0 tractor
+updating account #1 tractor
+updating account #2 tractor
+updating account #3 tractor
+updating account #4 tractor
+updating account #5 tractor
+updating account #6 tractor
+updating account #7 tractor
+updating account #8 tractor
+updating account #9 tractor
+bank update time is 13Num of requests is 4795
+how_many_accounts_done is 0
+num_threads_still_running is 4
+
+Hit 5000. how_many_accounts_done == 1 and num_threads_still_running == 4
+thread waiting
+	 num_of_requests == 5000
+Hit 5000. how_many_accounts_done == 2 and num_threads_still_running == 4
+thread waiting
+	 num_of_requests == 5001
+Hit 5000. how_many_accounts_done == 3 and num_threads_still_running == 4
+thread waiting
+	 num_of_requests == 5002
+Hit 5000. how_many_accounts_done == 4 and num_threads_still_running == 4
+inside the condition: and num_threads_still_running = 4
+signal bank and cond waiting the last transaction thread
+Bank thread is being called
+updating account #0 tractor
+updating account #1 tractor
+updating account #2 tractor
+updating account #3 tractor
+updating account #4 tractor
+updating account #5 tractor
+updating account #6 tractor
+updating account #7 tractor
+updating account #8 tractor
+updating account #9 tractor
+bank update time is 14Hit 5000. how_many_accounts_done == 1 and num_threads_still_running == 4
+thread waiting
+	 num_of_requests == 5000
+Hit 5000. how_many_accounts_done == 2 and num_threads_still_running == 4
+thread waiting
+	 num_of_requests == 5001
+Hit 5000. how_many_accounts_done == 3 and num_threads_still_running == 4
+thread waiting
+	 num_of_requests == 5001
+Hit 5000. how_many_accounts_done == 4 and num_threads_still_running == 4
+inside the condition: and num_threads_still_running = 4
+signal bank and cond waiting the last transaction thread
+Bank thread is being called
+updating account #0 tractor
+updating account #1 tractor
+updating account #2 tractor
+updating account #3 tractor
+updating account #4 tractor
+updating account #5 tractor
+updating account #6 tractor
+updating account #7 tractor
+updating account #8 tractor
+updating account #9 tractor
+bank update time is 15Num of requests is 2367
+how_many_accounts_done is 0
+num_threads_still_running is 3
+
+Hit 5000. how_many_accounts_done == 1 and num_threads_still_running == 3
+thread waiting
+	 num_of_requests == 5000
+Hit 5000. how_many_accounts_done == 2 and num_threads_still_running == 3
+thread waiting
+	 num_of_requests == 5000
+Hit 5000. how_many_accounts_done == 3 and num_threads_still_running == 3
+inside the condition: and num_threads_still_running = 3
+signal bank and cond waiting the last transaction thread
+Bank thread is being called
+updating account #0 tractor
+updating account #1 tractor
+updating account #2 tractor
+updating account #3 tractor
+updating account #4 tractor
+updating account #5 tractor
+updating account #6 tractor
+updating account #7 tractor
+updating account #8 tractor
+updating account #9 tractor
+bank update time is 16Hit 5000. how_many_accounts_done == 1 and num_threads_still_running == 3
+thread waiting
+	 num_of_requests == 5000
+Hit 5000. how_many_accounts_done == 2 and num_threads_still_running == 3
+thread waiting
+	 num_of_requests == 5001
+Hit 5000. how_many_accounts_done == 3 and num_threads_still_running == 3
+inside the condition: and num_threads_still_running = 3
+signal bank and cond waiting the last transaction thread
+Bank thread is being called
+updating account #0 tractor
+updating account #1 tractor
+updating account #2 tractor
+updating account #3 tractor
+updating account #4 tractor
+updating account #5 tractor
+updating account #6 tractor
+updating account #7 tractor
+updating account #8 tractor
+updating account #9 tractor
+bank update time is 17Num of requests is 371
+how_many_accounts_done is 0
+num_threads_still_running is 2
+
+Num of requests is 2666
+how_many_accounts_done is 0
+num_threads_still_running is 1
+
+Num of requests is 4938
+ENDING inside the condition: and num_threads_still_running = 0
+signal bank and cond waiting the last transaction thread
+how_many_accounts_done is 0
+num_threads_still_running is 0
+
+Bank thread is being called
+updating account #0 tractor
+updating account #1 tractor
+updating account #2 tractor
+updating account #3 tractor
+updating account #4 tractor
+updating account #5 tractor
+updating account #6 tractor
+updating account #7 tractor
+updating account #8 tractor
+updating account #9 tractor
+bank update time is 18AFTER
+account 0 has a ballance of 3111685.125030 after threads havedone work
+account 1 has a ballance of 2016708.076940 after threads havedone work
+account 2 has a ballance of 3248744.197150 after threads havedone work
+account 3 has a ballance of 3889910.498840 after threads havedone work
+account 4 has a ballance of 2164242.043280 after threads havedone work
+account 5 has a ballance of 2119929.998600 after threads havedone work
+account 6 has a ballance of 2206168.176800 after threads havedone work
+account 7 has a ballance of 2306013.024420 after threads havedone work
+account 8 has a ballance of 2788273.791400 after threads havedone work
+account 9 has a ballance of 2011539.143500 after threads havedone work
+
+update times total is 18
+==16972== 
+==16972== HEAP SUMMARY:
+==16972==     in use at exit: 0 bytes in 0 blocks
+==16972==   total heap usage: 880,689 allocs, 880,689 frees, 24,593,961 bytes allocated
+==16972== 
+==16972== All heap blocks were freed -- no leaks are possible
+==16972== 
+==16972== For counts of detected and suppressed errors, rerun with: -v
+==16972== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
